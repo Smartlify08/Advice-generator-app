@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend mentor solution](https://www.frontendmentor.io/solutions/advice-gen-app-WL-887Uia0)
 - Live Site URL: [Advice generator app](https://advice-gen-smartlify.netlify.app/)
 
 ## My process
