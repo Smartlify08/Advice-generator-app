@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Manrope", sans-serif;
+  background-color: var(--DarkBlue);
+}
+
+h1 {
+  font-size: 48px;
+  color: var(--NeonGreen);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  color: var(--LightCyan);
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.init > div {
+  display: flex;
+  justify-content: center;
+}
+
+.advice-card {
+  width: 400px;
+  background-color: var(--DarkGrayishBlue);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.advice-card .advice-no {
+  color: var(--NeonGreen);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.advice-card .advice-text {
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.2;
+  color: var(--LightCyan);
+}
+
+.advice-btn {
+  background-color: var(--NeonGreen);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+  border: none;
+}
+
+.advice-btn:hover {
+  background-color: hsl(150, 100%, 66%, 0.8);
+}
+
+.start {
+  background-color: var(--NeonGreen);
+  color: var(--DarkBlue);
+  border: none;
+  font-size: 18px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  justify-self: center;
+}
+.start img {
+  width: 40px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
