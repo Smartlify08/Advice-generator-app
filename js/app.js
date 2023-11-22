@@ -10,6 +10,9 @@ const fetchAdvice = () => {
             <div class="advice-card">
                 <p class="advice-no">advice #${data.slip.id}</p>
                 <p class="advice-text">${data.slip.advice}</p>
+                <div>
+                <img  class="pattern" src = "../images/pattern-divider-desktop.svg">
+                </div>
             </div>
             `;
       const btn = document.createElement("button");

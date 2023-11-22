@@ -22,14 +22,18 @@ body {
   background-color: var(--DarkBlue);
 }
 
-h1 {
+.init {
+  width: 800px;
+}
+
+.init h1 {
   font-size: 48px;
   color: var(--NeonGreen);
   margin-bottom: 20px;
   text-align: center;
 }
 
-p {
+.init p {
   color: var(--LightCyan);
   font-size: 20px;
   margin-bottom: 20px;
@@ -49,7 +53,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 25px;
 }
 
 .advice-card .advice-no {
@@ -76,6 +80,8 @@ p {
   cursor: pointer;
   transition: 0.5s;
   border: none;
+  position: absolute;
+  bottom: 15%;
 }
 
 .advice-btn:hover {
@@ -107,5 +113,44 @@ p {
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+.pattern {
+  width: 400px;
+  margin-bottom: 30px;
+}
+
+@media (width < 768px) {
+  .init {
+    width: unset;
+  }
+  .init h1 {
+    font-size: 30px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+  .init p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .start {
+    margin-top: 40px;
+    width: 50px;
+    height: 50px;
+  }
+  .start img {
+    width: 20px;
+  }
+  .pattern {
+    width: 310px;
+  }
+
+  .advice-card {
+    width: 320px;
+  }
+  .advice-card .advice-text {
+    font-size: 20px;
+    line-height: 1.3;
   }
 }
