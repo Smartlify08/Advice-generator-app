@@ -5,16 +5,18 @@ const body = document.querySelector("body");
 const fetchAdvice = () => {
   fetch("https://api.adviceslip.com/advice")
     .then((res) => res.json())
-    .then((data) => {
+    .then(({ slip }) => {
+      const { id, advice } = slip;
       const advice_card = `
             <div class="advice-card">
-                <p class="advice-no">advice #${data.slip.id}</p>
-                <p class="advice-text">${data.slip.advice}</p>
+                <p class="advice-no">advice #${id}</p>
+                <p class="advice-text">${advice}</p>
                 <div>
                 <img  class="pattern" src = "../images/pattern-divider-desktop.svg">
                 </div>
             </div>
             `;
+
       const btn = document.createElement("button");
       const img = document.createElement("img");
       img.src = "../images/icon-dice.svg";
@@ -47,3 +49,15 @@ start.addEventListener("click", () => {
     fetchAdvice();
   }, 1000);
 });
+
+const fetchAdvice_ = () => {
+  fetch("https://api.adviceslip.com/advice")
+    .then((res) => res.json())
+    .then(({ slip }) => {
+      const { id, advice } = slip;
+
+      console.log(id, advice);
+    });
+};
+
+fetchAdvice_();
