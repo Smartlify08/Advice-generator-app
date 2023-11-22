@@ -81,7 +81,7 @@ body {
   transition: 0.5s;
   border: none;
   position: absolute;
-  bottom: 15%;
+  bottom: 25%;
 }
 
 .advice-btn:hover {
@@ -118,7 +118,7 @@ body {
 
 .pattern {
   width: 400px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 @media (width < 768px) {
