@@ -118,7 +118,7 @@ body {
 
 .pattern {
   width: 400px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 @media (width < 768px) {
@@ -126,6 +126,7 @@ body {
     width: unset;
   }
   .init h1 {
+    margin-top: 50px;
     font-size: 30px;
     line-height: 1.1;
     margin-bottom: 20px;
